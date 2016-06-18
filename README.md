@@ -1,7 +1,7 @@
 The Creativcoins
 ===============
 
-[![Gitter](https://badges.gitter.im/creativcoins/creativecoinsapp.svg)](https://gitter.im/creativcoins/creativecoinsapp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)(https://gitter.im/creativcoins/creativecoinsapp)
+[![Gitter](https://badges.gitter.im/creativcoins/creativecoinsapp.svg)](https://gitter.im/creativcoins/creativecoinsapp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)(https://gitter.im/creativcoins/creativecoinsapp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This is the repo for the code for the main Creativecoins project at https://github.com/creativcoins/creativecoinsapp
 
