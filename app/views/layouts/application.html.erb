@@ -9,6 +9,100 @@
   </head>
 
   <body>
+
+
+  	<div class="container">
+		  	<nav class="navbar navbar-default navbar-fixed-top animated bounce">
+		      <div class="container">
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand" href="#">
+		          <%= image_tag('creativcoin-01.png', class: 'logo1') %>
+		          </a>
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		          <!-- < if(user_signed_in?) > -->
+		            <li class="active wow fadeInDown" data-wow-delay="0.1s"><a href="#">Home</a></li>
+		            <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#about">Buy Bitcoins</a></li>
+		            <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#contact">Sell Bitcoins</a></li>
+		            <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#contact">Post trade</a></li>
+		            <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#contact">Info</a></li>
+		            <li class="dropdown" class="wow fadeInDown" data-wow-delay="0.6s">
+		              <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+		              <ul class="dropdown-menu">
+		                <li><a href="#"  data-toggle="modal" data-target="#myModal">Log in</a></li>
+		                <li><a href="register.html">Sign up</a></li>
+		                <li role="separator" class="divider"></li>
+		                <li><a href="#">Log Out</a></li>
+		                <li><a href="#">Settings</a></li>
+		               
+		              </ul>
+		              <!-- < else > -->
+			              <li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
+			              <li><a href="/users/new" data-toggle="modal" data-target="/users/new">Register</a></li>
+				  <!-- < end > -->
+		            </li>
+		          </ul>
+		        </div><!--/.nav-collapse -->
+		      </div>
+		    </nav>
+  	 </div>
+
     <%= yield %>
+
+
+    <div class="footer-area">
+            <div class="container">
+                <div class="row footer">
+                    <div class="col-md-4">
+                        <div class="single-footer">
+                            <%= image_tag('creativcoin-01.png', class: 'foot') %>
+                            <p class="try">CreativeCoins is the world's largest boat manufacturer of superior quality pleasure boats, Sport Boats, Sport Cruisers, Sport Yachts, and Yachts. Find your Sea Ray boat today!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-footer">
+                            <h4>Our Best Points</h4>
+                            <div class="twitter-updates">
+                                <div class="single-tweets">
+                                    <h5>ABOUT 9 HOURS</h5>
+                                    <p><strong>CreativeCoins</strong> - a Brave New World for #rails with more cohesion, less coupling and greater dev speed <a href="https://plus.google.com/107103478620092083732"></a></p>
+                                </div>
+                                <div class="single-tweets">
+                                    <h5>ABOUT 9 HOURS</h5>
+                                    <p><strong>CreativeCoins</strong> - a Brave New World for #rails with more cohesion, less coupling and greater dev speed <a href="https://plus.google.com/107103478620092083732"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-footer">
+                            <h4>Useful lnks</h4>
+                            <div class="footer-links">
+                                <ul class="list-unstyled">
+                                    <li><a href="">Linkedin</a></li>
+                                    <li><a href="" class="active">Facebook</a></li>
+                                    <li><a href="">Twitter</a></li>
+                                    <li><a href="">Instagram</a></li>
+                                    <li><a href="">Customers Testimonials</a></li>
+                                    <li><a href="">Affliate</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-copy">
+                    <p><span>(C) webstie, All rights reserved</span> | <span>Graphic Designed by <a href=CreativeCoins>CreativeCoins</a></span> | <span> Web Designed by <a href="https://plus.google.com/">CreativeCoins</a></span> </p>
+                </div>
+            </div>
+        </div>
+
   </body>
 </html>
