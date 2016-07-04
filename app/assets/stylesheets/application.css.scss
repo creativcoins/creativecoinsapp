@@ -1,6 +1,16 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
+@import 'animate';
 
+body{
+    background: image-url('background-world-map.gif');
+    background-attachment: fixed;
+    margin-top: 64px!important;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
 .logo1{
 	width: 239px;
     margin-top: -92px;
@@ -10,8 +20,53 @@
     margin-top: -78px;
     margin: -187px 212px 8px;
 }
-.jumbo{
-	margin-top: 64px!important;
+.jumbotron {
+    background-color: rgba(248, 248, 248, 0.67)!important;
+}
+.jumbo {
+    width: 1151px!important;
+    height: 281px!important;
+}
+
+.face {
+    margin: -273px -1px 0px!important;
+}
+h2 {
+    font-weight: 800!important;
+    color: #5c381e;
+}
+.bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.welly{
+    padding: 52px!important;
+    background-color: rgba(51, 122, 183, 0.65)!important;
+    color: #fff;
+}
+small {
+    color: #fff!important;
+}
+.bit {
+    width: 61px!important;
+}
+.bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+.outro {
+    background-color: rgba(183, 51, 130, 0.65)!important;
+    color: #fff;
+    padding: 52px!important;
+}
+.state {
+    margin-top: -313px!important;
 }
 .single-footer img {
     margin-bottom: 20px;

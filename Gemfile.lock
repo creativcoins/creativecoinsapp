@@ -38,8 +38,7 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    animate-rails (1.0.10)
-      rails
+    animate.css-rails (3.2.0)
     arel (7.0.0)
     autoprefixer-rails (6.3.7)
       execjs
@@ -168,7 +167,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  animate-rails
+  animate.css-rails (~> 3.2)
   autoprefixer-rails (~> 6.3, >= 6.3.7)
   bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
