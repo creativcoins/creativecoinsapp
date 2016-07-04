@@ -47,3 +47,5 @@ gem 'devise', '~> 4.0.0.rc1'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.7'
+
+gem 'animate-rails'

@@ -11,48 +11,48 @@
   <body>
 
 
-  	<div class="container">
-		  	<nav class="navbar navbar-default navbar-fixed-top animated bounce">
-		      <div class="container">
-		        <div class="navbar-header">
-		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-		            <span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		          </button>
-		          <a class="navbar-brand" href="#">
-		          <%= image_tag('creativcoin-01.png', class: 'logo1') %>
-		          </a>
-		        </div>
-		        <div id="navbar" class="navbar-collapse collapse">
-		          <ul class="nav navbar-nav navbar-right">
-		          <!-- < if(user_signed_in?) > -->
-		            <li class="active wow fadeInDown" data-wow-delay="0.1s"><a href="#">Home</a></li>
-		            <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#about">Buy Bitcoins</a></li>
-		            <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#contact">Sell Bitcoins</a></li>
-		            <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#contact">Post trade</a></li>
-		            <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#contact">Info</a></li>
-		            <li class="dropdown" class="wow fadeInDown" data-wow-delay="0.6s">
-		              <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
-		              <ul class="dropdown-menu">
-		                <li><a href="#"  data-toggle="modal" data-target="#myModal">Log in</a></li>
-		                <li><a href="register.html">Sign up</a></li>
-		                <li role="separator" class="divider"></li>
-		                <li><a href="#">Log Out</a></li>
-		                <li><a href="#">Settings</a></li>
-		               
-		              </ul>
-		              <!-- < else > 
-			              <li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
-			              <li><a href="/users/new" data-toggle="modal" data-target="/users/new">Register</a></li>
-				   < end > -->
-		            </li>
-		          </ul>
-		        </div><!--/.nav-collapse -->
-		      </div>
-		    </nav>
-  	 </div>
+    <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top animated bounce">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                  <%= image_tag('creativcoin-01.png', class: 'logo1') %>
+                  </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                  <!-- < if(user_signed_in?) > -->
+                    <li class="active wow fadeInDown" data-wow-delay="0.1s"><a href="#">Home</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#about">Buy Bitcoins</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#contact">Sell Bitcoins</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#contact">Post trade</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#contact">Info</a></li>
+                    <li class="dropdown" class="wow fadeInDown" data-wow-delay="0.6s">
+                      <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#"  data-toggle="modal" data-target="#myModal">Log in</a></li>
+                        <li><a href="register.html">Sign up</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Log Out</a></li>
+                        <li><a href="#">Settings</a></li>
+                       
+                      </ul>
+                      <!-- < else > 
+                          <li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
+                          <li><a href="/users/new" data-toggle="modal" data-target="/users/new">Register</a></li>
+                   < end > -->
+                    </li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </nav>
+     </div>
 
     <%= yield %>
 
