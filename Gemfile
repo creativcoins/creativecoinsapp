@@ -6,7 +6,8 @@ gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+#gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,3 +51,5 @@ gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.7'
 
 #gem 'animate-rails'
 gem 'animate.css-rails', '~> 3.2'
+
+gem 'jquery-turbolinks'

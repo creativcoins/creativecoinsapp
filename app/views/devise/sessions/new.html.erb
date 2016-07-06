@@ -1,0 +1,58 @@
+<div class="container">
+  
+   
+  <div class="col-md-12">
+
+    <div class="banner">
+    <h2 class="reg">Login</h2>
+  </div>
+
+<div class="row">
+
+  </div>
+  <div class="col-md-12">
+
+<%= image_tag('creativcoin.png', class: 'favi2') %>
+<div class="col-md-88 wello2">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  
+    <div class="form-group">
+    <%= f.label :email, 'Email' %><br />
+    <%= f.email_field :email, autofocus: :required, class: 'form-control', placeholder: 'Email Address' %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :password, 'Password' %><br />
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password' %>
+    </div>
+
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="form-group">      
+      <%= check_box_tag :remember_me, class: "checkbox inline form-control", class: 'form-control'  %>
+      <%= label_tag :remember_me %>
+      <%# f.label :remember_me %>
+    </div>
+    
+  <% end -%>
+
+    
+    <!--<div class="modal-footer modalFooter">
+        <%# submit_tag "Log in", class: 'btn btn-primary btn-lg btn-br' %>
+        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Cancel</button>
+      </div>  -->
+    <%=f.submit "Log in", class: 'btn btn-primary btn-lg btn-br' %>
+    <br><br>
+    
+    <%= render "devise/shared/links" %>
+  
+<% end %>
+</div>
+
+
+
+</div>
+
+
+</div>
+</div>

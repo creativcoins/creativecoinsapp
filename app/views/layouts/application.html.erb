@@ -20,38 +20,45 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">
+                  <a class="navbar-brand" href="/">
                   <%= image_tag('creativcoin-01.png', class: 'logo1') %>
                   </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
-                  <!-- < if(user_signed_in?) > -->
-                    <li class="active wow fadeInDown" data-wow-delay="0.1s"><a href="#">Home</a></li>
+                  <li class="wow fadeInDown" data-wow-delay="0.2s"><%= link_to 'Home', root_path %></li>
+                  <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#contact">Info</a></li>
+                    <% if(user_signed_in?) %>
                     <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#about">Buy Bitcoins</a></li>
                     <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#contact">Sell Bitcoins</a></li>
                     <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#contact">Post trade</a></li>
-                    <li class="wow fadeInDown" data-wow-delay="0.5s"><a href="#contact">Info</a></li>
                     <li class="dropdown" class="wow fadeInDown" data-wow-delay="0.6s">
-                      <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+                      <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.email %> <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#"  data-toggle="modal" data-target="#myModal">Log in</a></li>
-                        <li><a href="register.html">Sign up</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Log Out</a></li>
-                        <li><a href="#">Settings</a></li>
-                       
+                        <li><%= link_to :logout, destroy_user_session_path, :method => :delete %></li>
+                        <li><a href="#">Settings</a></li>                       
                       </ul>
-                      <!-- < else > 
-                          <li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
-                          <li><a href="/users/new" data-toggle="modal" data-target="/users/new">Register</a></li>
-                   < end > -->
-                    </li>
+                      </li>
+                      <% else %> 
+                          <li><a href="/users/sign_in" data-toggle="modal" data-target="/users/sign_in">Log in</a></li>
+                      <li><a href="/users/sign_up" data-toggle="modal" data-target="/users/sign_up">Register</a></li>
+                   <% end %>
+                    
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
             </nav>
      </div>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <%# render 'devise/sessions/new' %>
+    </div>
+
+
+     <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
 
     <%= yield %>
 

@@ -12,11 +12,11 @@ body{
     -webkit-background-size: cover;
 }
 .logo1{
-	width: 239px;
+    width: 239px;
     margin-top: -92px;
 }
 .logo2{
-	width: 586px;
+    width: 586px;
     margin-top: -78px;
     margin: -187px 212px 8px;
 }
@@ -34,6 +34,7 @@ body{
 h2 {
     font-weight: 800!important;
     color: #5c381e;
+    text-align: center;
 }
 .bounceInLeft {
     -webkit-animation-name: bounceInLeft;
@@ -138,4 +139,141 @@ p {
 .imaw {
     height: 379px!important;
     width: 534px!important;
+}
+
+/* Styles for registration */
+.favi2 {
+    width: 478px;
+    margin-top: -252px;
+}
+.banner {
+    margin-top: -25px;
+    margin-right: -127px;
+    margin-bottom: 20px;
+    margin-left: -127px;
+    
+}
+.reg{
+    font-size: 45px;
+    text-align: center;
+    background-color: rgb(103, 75, 55);
+    padding: 35px 525px;
+    color: #fff;
+    margin-top: -70px;
+}
+.col-md-88 {
+    width: 62.666667%;
+}
+.wellol {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: rgba(240, 240, 240, 0)!important;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.wello2 {
+    min-height: 20px;
+    padding: 19px;
+    margin-top: -177px;
+    margin-bottom: 50px;
+    margin-left: 191px;
+    background-color: rgba(240, 240, 240, 0)!important;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.center {
+    margin-left: 191px;
+    margin-top: -177px;
+}
+.btn-br {
+    color: #fff;
+    background-color: #5c381e!important;
+    border-color: #734523!important;
+}
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 23px!important;
+}
+.barrack {
+    margin-left: 240px;
+}
+
+/* login styles */
+.modalFooter{
+    padding: 15px;
+    text-align: left;
+    border-top: 1px solid #e5e5e5;
+}
+.login{
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+
+/*
+
+.new_user{
+    text-align: center;
+    margin: 20px auto;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: rgba(240, 240, 240, 0) !important;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    width: 500px;
+}
+
+
+margin-left: 191px;
+    margin-top: -177px;
+
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: rgba(240, 240, 240, 0) !important;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+*/
+
+
+/* User sign in and sign forms. */
+.border-form-div {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
 }
