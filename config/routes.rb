@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 	resources :sales
-	resources :buyer
+	resources :purchases
 
   devise_for :users
   root "welcome#index"
