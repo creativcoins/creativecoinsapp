@@ -29,8 +29,8 @@
                   <li class="wow fadeInDown" data-wow-delay="0.2s"><%= link_to 'Home', root_path %></li>
                   <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#contact">Info</a></li>
                     <% if(user_signed_in?) %>
-                    <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#about">Buy Bitcoins</a></li>
-                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#contact">Sell Bitcoins</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="/buyer">Buy Bitcoins</a></li>
+                    <li class="wow fadeInDown" data-wow-delay="0.3s"><%= link_to 'Sell Bitcoins', sales_path %></li>
                     <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#contact">Post trade</a></li>
                     <li class="dropdown" class="wow fadeInDown" data-wow-delay="0.6s">
                       <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.email %> <span class="caret"></span></a>
