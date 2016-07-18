@@ -1,6 +1,6 @@
 class SalesController < ApplicationController
 
-	def sales
+	def index
 	end
-	
+
 end
