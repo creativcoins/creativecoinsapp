@@ -27,7 +27,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
                   <li class="wow fadeInDown" data-wow-delay="0.2s"><%= link_to 'Home', root_path %></li>
-                  <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#contact">Info</a></li>
+                  <li class="wow fadeInDown" data-wow-delay="0.2s"><%= link_to 'Info', info_path %></li>
                     <% if(user_signed_in?) %>
                     <li class="wow fadeInDown" data-wow-delay="0.2s"><%= link_to 'Buy Bitcoins', purchases_path %></li>
                     <li class="wow fadeInDown" data-wow-delay="0.3s"><%= link_to 'Sell Bitcoins', sales_path %></li>
@@ -96,7 +96,7 @@
                                     <li><a href="" class="active">Facebook</a></li>
                                     <li><a href="">Twitter</a></li>
                                     <li><a href="">Instagram</a></li>
-                                    <li><a href="">Customers Testimonials</a></li>
+                                    <li><a <%= link_to 'Customers Testimonials', testimony_path %></li>
                                     <li><a href="">Affliate</a></li>
                                     <li><a href="">Contact Us</a></li>
                                 </ul>
