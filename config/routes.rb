@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
 	get '/info' => 'welcome#info'
 	get '/testimony' => 'welcome#testimony'
+	get '/affiliate' => 'welcome#affiliate'
+	get '/contactus' => 'welcome#contactus'
 
   devise_for :users
   root "welcome#index"
